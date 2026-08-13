@@ -8,7 +8,7 @@ class Solution {
             if(arr[i]==x)
             {
                 return i;
-                break;
+                
             }
         }
         return -1;
