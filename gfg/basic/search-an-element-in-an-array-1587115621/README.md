@@ -37,7 +37,7 @@ Explanation: The element to be searched is 6 and it is not present, so we return
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T10:01:22.711Z  
+**Submitted:** 2026-08-13T10:01:35.869Z  
 
 ```cpp
 class Solution {
@@ -50,7 +50,7 @@ class Solution {
             if(arr[i]==x)
             {
                 return i;
-                break;
+                
             }
         }
         return -1;
