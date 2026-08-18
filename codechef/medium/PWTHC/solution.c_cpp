@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int n,k,p;
+    cin>>n>>k>>p;
+    if(n*k>=p)
+    {
+        cout<<"YES"<<endl;
+    }
+    else{
+    cout<<"NO"<<endl;}
+}
