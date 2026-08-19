@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	int n;
+	cin>>n;
+	vector<int>v(2*n);
+    for(int i=1;i<=2*n;i++)
+    {
+        cin>>v[i];
+    }
+    int sum=0;
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=2*n;j>n;j--)
+        {
+            if(v[i]>v[j])
+            {
+                sum +=v[i];
+            }
+            else
+            {
+                sum +=v[j];
+            }
+        }
+    }
+    cout<<sum<<endl;
+	}
+    
+}
