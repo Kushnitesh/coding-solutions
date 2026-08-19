@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T14:42:38.936Z  
+**Submitted:** 2026-08-19T14:43:55.905Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -76,9 +76,9 @@ int main() {
         cin>>v[i];
     }
     int sum=0;
-    for(int i=1;i<=n;i++)
+    for(int i=0;i<n;i++)
     {
-        for(int j=2*n;j>n;j--)
+        for(int j=2*n-1;j>=n;j--)
         {
             if(v[i]>v[j])
             {
