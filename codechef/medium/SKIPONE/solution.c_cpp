@@ -25,7 +25,8 @@ int main() {
 	    {
 	        for(int i=0;i<n;i++)
 	        {
-	            while(v[i]+sum>=k)
+	            sum +=v[i];
+	            while(sum>=k)
 	            {
 	                count++;
 	                break;
