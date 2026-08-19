@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:12:29.271Z  
+**Submitted:** 2026-08-19T15:13:22.910Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -88,7 +88,8 @@ int main() {
 	    {
 	        for(int i=0;i<n;i++)
 	        {
-	            while(v[i]+sum>=k)
+	            sum +=v[i];
+	            while(sum>=k)
 	            {
 	                count++;
 	                break;
