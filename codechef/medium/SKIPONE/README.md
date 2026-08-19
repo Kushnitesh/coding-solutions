@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:13:22.910Z  
+**Submitted:** 2026-08-19T15:17:34.952Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -73,30 +73,29 @@ int main() {
 	    int n,k;
 	    cin>>n>>k;
 	    int count=0;
-	    int sum=0;
+	    int long sum=0;
+	    int maxi=0;
 	    vector<int>v(n);
 	    for(int i=0;i<n;i++)
 	    {
 	        cin>>v[i];
 	    }
-	    
-	    if(v[1]>k)
-	    {
-	        cout<<1<<endl;
-	    }
-	    else
-	    {
-	        for(int i=0;i<n;i++)
+	    for(int i=0;i<n;i++)
 	        {
-	            sum +=v[i];
-	            while(sum>=k)
-	            {
-	                count++;
-	                break;
-	            }
-	        }
-	        cout<<count+1<<endl;
+	           sum +=v[i];
+	           maxi=max(maxi,v[i]);
+	           if(sum-maxi<=k)
+	           {
+	               count++;
+	           }
+	           else
+	           {
+	               break;
+	           }
+	        
+	        
 	    }
+	    cout<<count<<endl;
 	}
 
 }
