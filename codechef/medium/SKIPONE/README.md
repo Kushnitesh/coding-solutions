@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:05:15.913Z  
+**Submitted:** 2026-08-19T15:12:29.271Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -66,6 +66,37 @@ using namespace std;
 
 int main() {
 	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,k;
+	    cin>>n>>k;
+	    int count=0;
+	    int sum=0;
+	    vector<int>v(n);
+	    for(int i=0;i<n;i++)
+	    {
+	        cin>>v[i];
+	    }
+	    
+	    if(v[1]>k)
+	    {
+	        cout<<1<<endl;
+	    }
+	    else
+	    {
+	        for(int i=0;i<n;i++)
+	        {
+	            while(v[i]+sum>=k)
+	            {
+	                count++;
+	                break;
+	            }
+	        }
+	        cout<<count+1<<endl;
+	    }
+	}
 
 }
 
