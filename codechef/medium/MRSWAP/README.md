@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T14:41:38.918Z  
+**Submitted:** 2026-08-19T14:42:38.936Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,7 +71,7 @@ int main() {
 	int n;
 	cin>>n;
 	vector<int>v(2*n);
-    for(int i=1;i<=2*n;i++)
+    for(int i=0;i<2*n;i++)
     {
         cin>>v[i];
     }
