@@ -54,7 +54,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T14:57:08.186Z  
+**Submitted:** 2026-08-19T15:00:30.836Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -63,6 +63,7 @@ using namespace std;
 int main() {
 	// your code goes here
 	int t;
+	cin>>t;
 	while(t--)
 	{
 	    int n;
@@ -88,6 +89,10 @@ int main() {
 	    if(count_even==count_odd)
 	    {
 	        cout<<count_odd+count_even<<endl;
+	    }
+	    else
+	    {
+	        cout<<2*min(count_even,count_odd)+1<<endl;
 	    }
 	}
 
