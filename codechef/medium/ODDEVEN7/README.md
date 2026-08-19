@@ -54,7 +54,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T14:54:33.942Z  
+**Submitted:** 2026-08-19T14:57:08.186Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -67,6 +67,8 @@ int main() {
 	{
 	    int n;
 	    cin>>n;
+	    int count_odd=0;
+	    int count_even=0;
 	    vector<int>v(n);
 	    for(int i=0;i<n;i++)
 	    {
@@ -74,7 +76,18 @@ int main() {
 	    }
 	    for(int i=0;i<n;i++)
 	    {
-	        if()
+	        if(v[i]%2==0)
+	        {
+	            count_even++;
+	        }
+	        else
+	        {
+	            count_odd++;
+	        }
+	    }
+	    if(count_even==count_odd)
+	    {
+	        cout<<count_odd+count_even<<endl;
 	    }
 	}
 
