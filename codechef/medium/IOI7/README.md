@@ -59,7 +59,7 @@ Chef scored $300$ points while the cutoff was $361$, hence he failed to get a go
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T14:33:05.085Z  
+**Submitted:** 2026-08-19T14:33:31.913Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -77,6 +77,7 @@ int main() {
 	{
 	    cout<<"NO";
 	}
+	return 0;
 
 }
 
